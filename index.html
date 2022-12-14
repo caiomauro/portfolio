@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Welcome!</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Caio\Desktop\Personal Website\style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+         var nbDrop = 800;
+         
+         function randRange(maxNum, minNum) {
+          return (Math.floor(Math.random(10) * (maxNum - minNum + 1)) + minNum);
+         }
+         
+         function createRain() {
+          for (i = 0; i < nbDrop; i++) {
+           
+           var dropLeft = randRange(0, 3000);
+           var dropTop = randRange(-1000, 1000);
+           $('.rain').append('<div class="drop" id="drop'+ i +'"></div>');
+           $('#drop' + i).css('left', dropLeft);
+           $('#drop' + i).css('top', dropTop); 
+          }
+         }
+        </script>
+    </head>
+    <body style = "background-color: #21243d;" onload="createRain()">
+        <!<section id="rain" class="rain"></section>>
+        <div class = "main_div" style = "min-height: 350px; max-height: 450px; min-width: 700px; max-width: 700px; border: 5px outset rgba(0, 0, 0, 0);">
+        <div class = "div1" style = "border: 5px outset black; height: 100px; width: 150px; float: left; margin-left: 25px; bottom: 50px; margin-top: 50px;">
+            <div class = "pfp" style = "display: flex; align-items: center; justify-content: center; height: 100px;">
+            </div>
+        </div>
+        <div class = "div2" style = "border: 5px outset black; height: 100px; width: 450px; float: right; bottom: 50px; margin-right: 25px; margin-top: 50px;">
+            <div style = "display: flex; align-items: center; justify-content: center; height: 100px;">
+                <p style = "font-size: 20px; color: rgba(245, 222, 179, 0.822)"> Caio Mauro // Computer Science Student </p> 
+            </div>
+        </div>
+        <div class = "div3" style = "border: 5px outset black; height: 100px; width: 640px; float: none; margin-left: 25px; margin-top: 200px">
+            <div style = "display: flex; align-items: center; justify-content: center; height: 100px;">
+                <a href="https://github.com/caiomauro" style = "font-size: 20px; padding-right: 10px;">GitHub</a>
+                <a style = "color: rgba(245, 222, 178, 0.822)">//</a>
+                <a href="https://www.linkedin.com/in/caio-mauro-71198517b/" style = "font-size: 20px; padding-left: 10px; padding-right: 10px;">LinkedIn</a>
+                <a style = "color: rgb(245, 222, 179, 0.822)">//</a>
+                <a href="caiomauro18@gmail.com" style = "font-size: 20px; padding-left: 10px;">Contact</a>  
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+              <a href="#">MrkIt: Scheduling app</a>
+              <a href="#">ATK: GeekSquad Task Management</a>
+              <a href="#">Portfolio Webite</a>
+            </div>
+          </div>
+        <div class = "signature">
+            <p class = "sig-text">Built By Caio Mauro</p>
+        </div>
+        </div>
+    </body>
+
+</html>

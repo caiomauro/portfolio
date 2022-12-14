@@ -1,0 +1,85 @@
+.main_div {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pfp {
+    background:url(website-image_140x90.jpg) 50% 50% no-repeat; max-height:90px; width:140px}
+
+html {height: 100%; width:100%}
+   body {background: #0D343A;
+    background:-webkit-gradient(linear, 0% 0%, 0%, 100%, from(rgba(13,52,58,1)), to (#000000));
+    background:-moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(0,0,0,1) 100%);
+    overflow: hidden;
+   }
+
+.dropbtn {
+background-color: rgba(245, 222, 179, 0.822);
+color: rgb(0, 0, 0);
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+.signature {
+    margin-top: 79px;
+    margin-right: 25px;
+    float: right;
+    display: inline-block;
+}
+
+.sig-text {
+    color:rgba(245, 222, 179, 0.822);
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    margin-top: 50px;
+    margin-left: 25px;
+    float: left;
+    display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #1f2241af;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.404);
+z-index: 1;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: clip;
+}
+
+.dropdown-content a {
+color: rgba(245, 222, 179, 0.822);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: rgba(107, 107, 107, 0.301);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgba(245, 222, 179, 0.651);}
+
+.drop {
+    /*
+    background:-webkit-gradient(linear, 0% 0%, 0%, 100%, from(rgba(13,52,58,1)), to (rgba(255,255,255,0.6)));
+    background:-moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,0.6) 100%);
+    */
+    background: #ffffff15;
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    bottom: 200px;
+    -webkit-animation: fall .63s linear infinite;
+    -moz-animation: fall .63s linear infinite;
+   }
+   
+   @-webkit-keyframes fall { to {margin-top: 900px;}}
+   @-moz-keyframes fall { to {margin-top: 900px;}}
