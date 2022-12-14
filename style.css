@@ -28,6 +28,12 @@ border: none;
     float: right;
     display: inline-block;
 }
+.resume {
+    margin-top: 50px;
+    margin-left: 25px;
+    float: left;
+    display: inline-block;
+}
 
 .sig-text {
     color:rgba(245, 222, 179, 0.822);
